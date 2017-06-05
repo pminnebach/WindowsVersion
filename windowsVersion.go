@@ -1,9 +1,9 @@
-package windowsVersion
+package main
 
 import (
+	"fmt"
 	"golang.org/x/sys/windows/registry"
 	"log"
-	"fmt"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	}
 	fmt.Printf("CurrentVersion: %s\n", cv)
 
-	pn , _, err := k.GetStringValue("ProductName")
+	pn, _, err := k.GetStringValue("ProductName")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -43,4 +43,6 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Printf("CurrentVersion: %s\n", cb)
+
+	fmt.Scanln()
 }
