@@ -1,7 +1,7 @@
 # WindowsVersion
 
 ```
-PS C:\Users\me\Desktop> .\registry.exe
+PS C:\Users\me\Desktop> .\WindowsVersion.exe
 CurrentVersion: 6.3
 ProductName: Windows Server 2016 Standard Evaluation
 CurrentMajorVersionNumber: 10
